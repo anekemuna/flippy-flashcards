@@ -43,6 +43,7 @@ Here's a walkthrough of implemented required features:
 
 <!-- <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />-->
 [![Walkthrough](https://img.youtube.com/vi/oM2C-GNR00E/0.jpg)](https://youtu.be/oM2C-GNR00E)
+
 Walkthrough link: [https://youtu.be/oM2C-GNR00E]
 
 Walkthrough created with 
