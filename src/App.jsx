@@ -22,7 +22,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="app">
       <h1>Top LeetCode Questions</h1>
       <h3>How would you solve this questions? Think of the algorithms.</h3>
       <h3>Number of cards: {flashcardsData.length}</h3>
@@ -34,7 +34,7 @@ function App() {
         next={nextCard}
         prev={prevCard}
       />
-    </>
+    </div>
   );
 }
 
