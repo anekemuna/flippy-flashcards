@@ -4,7 +4,7 @@ Submitted by: **Munachimso Aneke**
 
 This web app: **Flippy FlashCard is an application that contains a deck of Leetcode questions**
 
-Time spent: **X** hours spent in total
+Time spent: **7** hours spent in total
 
 ## Required Features
 
@@ -28,7 +28,7 @@ The following **optional** features are implemented:
 
 - [ ] Cards contain images in addition to or in place of text
   - [ ] Some or all cards have images in place of or in addition to text
-- [ ] Cards have different visual styles such as color based on their category
+- [x] Cards have different visual styles such as color based on their category
   - Example categories you can use:
     - Difficulty: Easy/medium/hard
     - Subject: Biology/Chemistry/Physics/Earth science
@@ -53,10 +53,11 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+- The key thing I struggled with was deciding the flow of logic for the buttons. I was not sure if I should make a FlashcardList container for all the flashcards and add the navigation buttons, or if I should directly in the Flashcard components.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2025] [Munachimso Aneke]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
