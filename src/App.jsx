@@ -6,7 +6,14 @@ import flashcardsData from "./data/flashcards.json";
 function App() {
   const [index, setIndex] = useState(0);
   const nextCard = () => {
-    setIndex((prev) => (prev + 1) % flashcardsData.length);
+    let randomIndex = 0;
+
+    // setIndex((prev) => (prev + 1) % flashcardsData.length);
+    while(randomIndex === index && flashcardsData.length > 1){
+      randomIndex = Math.floor(Math.random() * flashcardsData.length);
+    }
+
+    setIndex(randomIndex);
   };
   const prevCard = () => {
     setIndex(
@@ -22,6 +29,7 @@ function App() {
 
       <Flashcard
         flashcard={flashcardsData[index]}
+        index={index}
         next={nextCard}
         prev={prevCard}
       />

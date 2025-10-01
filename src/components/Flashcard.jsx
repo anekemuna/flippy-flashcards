@@ -21,6 +21,9 @@ const Flashcard = (props) => {
 
   return (
     <div className="flashcard-container">
+      <div className="card-index">
+        {props.index + 1}/10
+      </div>
       <div className="flashcard" onClick={handleClick}>
         {isFlipped ? (
           formatAnswers()
@@ -33,7 +36,7 @@ const Flashcard = (props) => {
           </>
         )}
       </div>
-      <div>
+      <div className="navigation-buttons">
         <button onClick={prev}>Prev</button>
         <button onClick={next}>Next</button>
       </div>
