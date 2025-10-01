@@ -29,6 +29,7 @@ function App() {
 
       <Flashcard
         flashcard={flashcardsData[index]}
+        key={index}
         index={index}
         next={nextCard}
         prev={prevCard}

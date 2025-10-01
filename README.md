@@ -11,7 +11,7 @@ Time spent: **X** hours spent in total
 The following **required** functionality is completed:
 
 
-- [ ] **The app displays the title of the card set, a short description, and the total number of cards**
+- [x] **The app displays the title of the card set, a short description, and the total number of cards**
   - [x] Title of card set is displayed 
   - [x] A short description of the card set is displayed 
   - [x] A list of card pairs is created
@@ -35,7 +35,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [x] Card automatically flips to the front side (question) when next or previous button is clicked.
 
 ## Video Walkthrough
 
