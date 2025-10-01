@@ -19,12 +19,35 @@ const Flashcard = (props) => {
     setIsFlipped(!isFlipped);
   };
 
+  const getCategoryStyle = (categories) => {
+    const category = categories.split(",")[0].trim().toLowerCase();
+
+    switch (category) {
+      case "hashing":
+        return "category-hashing";
+      case "strings":
+        return "category-strings";
+      case "sorting":
+        return "category-sorting";
+      case "stack":
+        return "category-stack";
+      case "dynamic programming":
+        return "category-dp";
+      case "trees":
+        return "category-trees";
+      case "linked list":
+        return "category-linkedlist";
+      case "graph":
+        return "category-graph";
+      default:
+        return "category-default";
+    }
+  };
+
   return (
     <div className="flashcard-container">
-      <div className="card-index">
-        {props.index + 1}/10
-      </div>
-      <div className="flashcard" onClick={handleClick}>
+      <div className="card-index">{props.index + 1}/10</div>
+      <div className={`flashcard ${getCategoryStyle(flashcard.category)}`} onClick={handleClick}>
         {isFlipped ? (
           formatAnswers()
         ) : (
