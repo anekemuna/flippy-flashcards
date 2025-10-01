@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "question": "Two Sum",
+    "answers": [
+      "Initialize a hash map to store numbers and their indices",
+      "Iterate through the array",
+      "For each number, check if target - number exists in the map",
+      "If yes, return the pair",
+      "If no, add the number to the map"
+    ],
+    "category": "Hashing, Arrays"
+  },
+  {
+    "id": 2,
+    "question": "Longest Substring Without Repeating Characters",
+    "answers": [
+      "Use sliding window with two pointers",
+      "Track seen characters in a hash set or map",
+      "Expand right pointer, add character if not in set",
+      "If duplicate found, move left pointer until duplicate removed",
+      "Keep track of max window length"
+    ],
+    "category": "Strings, Sliding Window"
+  },
+  {
+    "id": 3,
+    "question": "Merge Intervals",
+    "answers": [
+      "Sort intervals by start time",
+      "Initialize result list",
+      "Iterate through intervals",
+      "If current interval overlaps with last in result, merge them",
+      "Else, append interval to result"
+    ],
+    "category": "Sorting, Intervals"
+  },
+  {
+    "id": 4,
+    "question": "Valid Parentheses",
+    "answers": [
+      "Use a stack",
+      "Iterate through string",
+      "Push opening brackets to stack",
+      "When closing bracket encountered, check stack top for match",
+      "If mismatch or stack empty, invalid",
+      "If stack empty at end, valid"
+    ],
+    "category": "Stack, Strings"
+  },
+  {
+    "id": 5,
+    "question": "Maximum Subarray (Kadane’s Algorithm)",
+    "answers": [
+      "Initialize two variables: current sum and max sum",
+      "Iterate through array",
+      "At each step, update current sum = max(current element, current sum + element)",
+      "Update max sum if current sum is larger",
+      "Return max sum"
+    ],
+    "category": "Dynamic Programming, Arrays"
+  },
+  {
+    "id": 6,
+    "question": "Climbing Stairs",
+    "answers": [
+      "Recognize it as Fibonacci sequence",
+      "Define dp[i] = ways to reach i-th step",
+      "Base cases: dp[1] = 1, dp[2] = 2",
+      "Transition: dp[i] = dp[i-1] + dp[i-2]",
+      "Return dp[n]"
+    ],
+    "category": "Dynamic Programming"
+  },
+  {
+    "id": 7,
+    "question": "Binary Tree Level Order Traversal",
+    "answers": [
+      "Use a queue for BFS",
+      "Push root into queue",
+      "While queue not empty, process nodes level by level",
+      "For each level, record node values and add children to queue",
+      "Return level order list"
+    ],
+    "category": "Trees, BFS"
+  },
+  {
+    "id": 8,
+    "question": "Merge Two Sorted Lists",
+    "answers": [
+      "Initialize a dummy node",
+      "Use pointer to track current node",
+      "Compare heads of both lists",
+      "Append smaller node to result list and move pointer",
+      "Continue until one list is empty, then append remainder",
+      "Return merged list"
+    ],
+    "category": "Linked List"
+  },
+  {
+    "id": 9,
+    "question": "Valid Anagram",
+    "answers": [
+      "Check if lengths differ, if so return false",
+      "Count character frequencies for both strings",
+      "Compare frequency maps",
+      "If identical, return true; otherwise false"
+    ],
+    "category": "Strings, Hashing"
+  },
+  {
+    "id": 10,
+    "question": "Number of Islands",
+    "answers": [
+      "Iterate through grid",
+      "When land (1) is found, increment island count",
+      "Use DFS or BFS to mark all connected land as visited",
+      "Continue scanning grid",
+      "Return island count"
+    ],
+    "category": "Graph, DFS/BFS"
+  }
+]
