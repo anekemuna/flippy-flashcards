@@ -41,10 +41,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<!-- <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />-->
+[![Walkthrough](https://img.youtube.com/oM2C-GNR00E/0.jpg)](https://youtu.be/oM2C-GNR00E)
+Walkthrough link: [https://youtu.be/oM2C-GNR00E]
+[https://imgur.com/a/hLbrMNR]
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+Walkthrough created with 
+[YouTube](https://www.youtube.com/)
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
