@@ -1,11 +1,42 @@
 import React, { useState } from "react";
 
-const Flashcard = () => {
+const Flashcard = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
+  const flashcard = props.flashcard;
+  const next = props.next;
+  const prev = props.prev;
+
+  const formatAnswers = () => {
+    return flashcard.answers.map((answer, index) => (
+      <div key={index}>
+        <strong>{index + 1}:</strong> {answer}
+      </div>
+    ));
+  };
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
-    <div className="flashcard">
-      <h1>Flashcard</h1>flashcard
+    <div className="flashcard-container">
+      <div className="flashcard" onClick={handleClick}>
+        {isFlipped ? (
+          formatAnswers()
+        ) : (
+          <>
+            <p>{flashcard.question}</p>
+            <p>
+              <em>{flashcard.category}</em>
+            </p>
+          </>
+        )}
+      </div>
+      <div>
+        <button onClick={prev}>Prev</button>
+        <button onClick={next}>Next</button>
+      </div>
     </div>
   );
 };
