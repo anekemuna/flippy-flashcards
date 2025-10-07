@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "question": "What is a Docker container?",
+    "answer": "Isolated runtime environment",
+    "category": "Basics"
+  },
+  {
+    "id": 2,
+    "question": "What is a Docker image?",
+    "answer": "Template for creating containers",
+    "category": "Basics"
+  },
+  {
+    "id": 3,
+    "question": "Where are Docker images stored?",
+    "answer": "In a registry",
+    "category": "Basics"
+  },
+  {
+    "id": 4,
+    "question": "What does a container include?",
+    "answer": "App, OS, dependencies, configs",
+    "category": "Basics"
+  },
+  {
+    "id": 5,
+    "question": "Why are containers better than traditional servers?",
+    "answer": "No conflicts, fast deployment",
+    "category": "Basics"
+  },
+  {
+    "id": 6,
+    "question": "How do containers help scaling?",
+    "answer": "Duplicate from one image",
+    "category": "Basics"
+  },
+  {
+    "id": 7,
+    "question": "What handles multiple containers?",
+    "answer": "Orchestrator",
+    "category": "Basics"
+  },
+  {
+    "id": 8,
+    "question": "How are updates made easy with containers?",
+    "answer": "Replace containers gradually",
+    "category": "Basics"
+  },
+  {
+    "id": 9,
+    "question": "What real-world system inspired Docker?",
+    "answer": "Shipping containers",
+    "category": "Basics"
+  },
+  {
+    "id": 10,
+    "question": "Can different tech stacks run together in Docker?",
+    "answer": "Yes, each in its own container",
+    "category": "Basics"
+  },
+  {
+    "id": 11,
+    "question": "How to avoid dependency conflicts?",
+    "answer": "Use isolated containers",
+    "category": "Practical"
+  },
+  {
+    "id": 12,
+    "question": "How to deploy without downtime?",
+    "answer": "Rolling updates via orchestrator",
+    "category": "Practical"
+  },
+  {
+    "id": 13,
+    "question": "What is the benefit of standardization in Docker?",
+    "answer": "Easy deployment & scaling",
+    "category": "Practical"
+  },
+  {
+    "id": 14,
+    "question": "What command runs a container?",
+    "answer": "docker run",
+    "category": "Practical"
+  },
+  {
+    "id": 15,
+    "question": "What command builds an image?",
+    "answer": "docker build",
+    "category": "Practical"
+  },
+  {
+    "id": 16,
+    "question": "What command uploads an image to a registry?",
+    "answer": "docker push",
+    "category": "Practical"
+  }
+]
