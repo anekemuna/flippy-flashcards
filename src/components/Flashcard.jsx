@@ -55,21 +55,27 @@ const Flashcard = (props) => {
 
   return (
     <div className="flashcard-container">
-      <div className="card-index">{props.index + 1}/{count}</div>
+      <div className="card-index">
+        {props.index + 1}/{count}
+      </div>
       <div
-        className={`flashcard ${getCategoryStyle(flashcard.category)}`}
+        className={`flashcard ${getCategoryStyle(flashcard.category)} ${
+          isFlipped ? "flipped" : ""
+        }`}
         onClick={handleClick}
       >
-        {isFlipped ? (
-          formatAnswers()
-        ) : (
-          <>
-            <p>{flashcard.question}</p>
-            <p>
-              <em>({flashcard.category})</em>
-            </p>
-          </>
-        )}
+        {/* Front Side */}
+        <div className="flashcard-front">
+          <p>{flashcard.question}</p>
+          <p>
+            <em>({flashcard.category})</em>
+          </p>
+        </div>
+
+        {/* Back Side */}
+        <div className="flashcard-back">
+          <div className="answers-container">{formatAnswers()}</div>
+        </div>
       </div>
       <div className="navigation-buttons">
         <button onClick={prev}>Prev</button>
