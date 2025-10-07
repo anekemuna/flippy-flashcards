@@ -6,6 +6,7 @@ const Flashcard = (props) => {
   const flashcard = props.flashcard;
   const next = props.next;
   const prev = props.prev;
+  const count = props.cardCount;
 
   const formatAnswers = () => {
     return Array.isArray(flashcard.answer) ? (
@@ -50,7 +51,7 @@ const Flashcard = (props) => {
 
   return (
     <div className="flashcard-container">
-      <div className="card-index">{props.index + 1}/10</div>
+      <div className="card-index">{props.index + 1}/{count}</div>
       <div
         className={`flashcard ${getCategoryStyle(flashcard.category)}`}
         onClick={handleClick}
