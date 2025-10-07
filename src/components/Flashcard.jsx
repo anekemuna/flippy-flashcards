@@ -44,6 +44,10 @@ const Flashcard = (props) => {
         return "category-linkedlist";
       case "graph":
         return "category-graph";
+      case "basics":
+        return "category-basics";
+      case "practical":
+        return "category-practical";
       default:
         return "category-default";
     }
@@ -62,7 +66,7 @@ const Flashcard = (props) => {
           <>
             <p>{flashcard.question}</p>
             <p>
-              <em>{flashcard.category}</em>
+              <em>({flashcard.category})</em>
             </p>
           </>
         )}
