@@ -8,11 +8,15 @@ const Flashcard = (props) => {
   const prev = props.prev;
 
   const formatAnswers = () => {
-    return flashcard.answer.map((answer, index) => (
-      <div key={index}>
-        <strong>{index + 1}:</strong> {answer}
-      </div>
-    ));
+    return Array.isArray(flashcard.answer) ? (
+      flashcard.answer.map((answer, index) => (
+        <div key={index}>
+          <strong>{index + 1}:</strong> {answer}
+        </div>
+      ))
+    ) : (
+      <div>{flashcard.answer}</div>
+    );
   };
 
   const handleClick = () => {
@@ -47,7 +51,10 @@ const Flashcard = (props) => {
   return (
     <div className="flashcard-container">
       <div className="card-index">{props.index + 1}/10</div>
-      <div className={`flashcard ${getCategoryStyle(flashcard.category)}`} onClick={handleClick}>
+      <div
+        className={`flashcard ${getCategoryStyle(flashcard.category)}`}
+        onClick={handleClick}
+      >
         {isFlipped ? (
           formatAnswers()
         ) : (
