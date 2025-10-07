@@ -8,7 +8,7 @@ const Flashcard = (props) => {
   const prev = props.prev;
 
   const formatAnswers = () => {
-    return flashcard.answers.map((answer, index) => (
+    return flashcard.answer.map((answer, index) => (
       <div key={index}>
         <strong>{index + 1}:</strong> {answer}
       </div>
