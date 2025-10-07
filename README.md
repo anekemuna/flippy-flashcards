@@ -1,10 +1,10 @@
-# Web Development Project 3 - *Name of App Here*
+# Web Development Project 3 - *Flippy Flashcards*
 
 Submitted by: **Munachimso Aneke**
 
-This web app: **insert description**
+This web app: **Flippy FlashCard is an application that contains a deck of Q&A cards**
 
-Time spent: **2** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Required Features
 
