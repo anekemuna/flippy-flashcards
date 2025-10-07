@@ -6,13 +6,18 @@ const Flashcard = (props) => {
   const flashcard = props.flashcard;
   const next = props.next;
   const prev = props.prev;
+  const count = props.cardCount;
 
   const formatAnswers = () => {
-    return flashcard.answers.map((answer, index) => (
-      <div key={index}>
-        <strong>{index + 1}:</strong> {answer}
-      </div>
-    ));
+    return Array.isArray(flashcard.answer) ? (
+      flashcard.answer.map((answer, index) => (
+        <div key={index}>
+          <strong>{index + 1}:</strong> {answer}
+        </div>
+      ))
+    ) : (
+      <div>{flashcard.answer}</div>
+    );
   };
 
   const handleClick = () => {
@@ -39,6 +44,10 @@ const Flashcard = (props) => {
         return "category-linkedlist";
       case "graph":
         return "category-graph";
+      case "basics":
+        return "category-basics";
+      case "practical":
+        return "category-practical";
       default:
         return "category-default";
     }
@@ -46,18 +55,27 @@ const Flashcard = (props) => {
 
   return (
     <div className="flashcard-container">
-      <div className="card-index">{props.index + 1}/10</div>
-      <div className={`flashcard ${getCategoryStyle(flashcard.category)}`} onClick={handleClick}>
-        {isFlipped ? (
-          formatAnswers()
-        ) : (
-          <>
-            <p>{flashcard.question}</p>
-            <p>
-              <em>{flashcard.category}</em>
-            </p>
-          </>
-        )}
+      <div className="card-index">
+        {props.index + 1}/{count}
+      </div>
+      <div
+        className={`flashcard ${getCategoryStyle(flashcard.category)} ${
+          isFlipped ? "flipped" : ""
+        }`}
+        onClick={handleClick}
+      >
+        {/* Front Side */}
+        <div className="flashcard-front">
+          <p>{flashcard.question}</p>
+          <p>
+            <em>({flashcard.category})</em>
+          </p>
+        </div>
+
+        {/* Back Side */}
+        <div className="flashcard-back">
+          <div className="answers-container">{formatAnswers()}</div>
+        </div>
       </div>
       <div className="navigation-buttons">
         <button onClick={prev}>Prev</button>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Flashcard from "./components/Flashcard";
-import flashcardsData from "./data/flashcards.json";
+import flashcardsData from "./data/flashcards_docker.json";
 
 function App() {
   const [index, setIndex] = useState(0);
@@ -33,6 +33,7 @@ function App() {
         index={index}
         next={nextCard}
         prev={prevCard}
+        cardCount= {flashcardsData.length}
       />
     </div>
   );

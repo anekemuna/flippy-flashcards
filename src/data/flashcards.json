@@ -2,7 +2,7 @@
   {
     "id": 1,
     "question": "Two Sum",
-    "answers": [
+    "answer": [
       "Initialize a hash map to store numbers and their indices",
       "Iterate through the array",
       "For each number, check if target - number exists in the map",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "question": "Longest Substring Without Repeating Characters",
-    "answers": [
+    "answer": [
       "Use sliding window with two pointers",
       "Track seen characters in a hash set or map",
       "Expand right pointer, add character if not in set",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "question": "Merge Intervals",
-    "answers": [
+    "answer": [
       "Sort intervals by start time",
       "Initialize result list",
       "Iterate through intervals",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "question": "Valid Parentheses",
-    "answers": [
+    "answer": [
       "Use a stack",
       "Iterate through string",
       "Push opening brackets to stack",
@@ -50,8 +50,8 @@
   },
   {
     "id": 5,
-    "question": "Maximum Subarray (Kadane’s Algorithm)",
-    "answers": [
+    "question": "Maximum Subarray (Kadane's Algorithm)",
+    "answer": [
       "Initialize two variables: current sum and max sum",
       "Iterate through array",
       "At each step, update current sum = max(current element, current sum + element)",
@@ -63,7 +63,7 @@
   {
     "id": 6,
     "question": "Climbing Stairs",
-    "answers": [
+    "answer": [
       "Recognize it as Fibonacci sequence",
       "Define dp[i] = ways to reach i-th step",
       "Base cases: dp[1] = 1, dp[2] = 2",
@@ -75,7 +75,7 @@
   {
     "id": 7,
     "question": "Binary Tree Level Order Traversal",
-    "answers": [
+    "answer": [
       "Use a queue for BFS",
       "Push root into queue",
       "While queue not empty, process nodes level by level",
@@ -87,7 +87,7 @@
   {
     "id": 8,
     "question": "Merge Two Sorted Lists",
-    "answers": [
+    "answer": [
       "Initialize a dummy node",
       "Use pointer to track current node",
       "Compare heads of both lists",
@@ -100,7 +100,7 @@
   {
     "id": 9,
     "question": "Valid Anagram",
-    "answers": [
+    "answer": [
       "Check if lengths differ, if so return false",
       "Count character frequencies for both strings",
       "Compare frequency maps",
@@ -111,7 +111,7 @@
   {
     "id": 10,
     "question": "Number of Islands",
-    "answers": [
+    "answer": [
       "Iterate through grid",
       "When land (1) is found, increment island count",
       "Use DFS or BFS to mark all connected land as visited",
