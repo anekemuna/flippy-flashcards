@@ -6,8 +6,6 @@ const Flashcard = (props) => {
   const [isCorrect, setIsCorrect] = useState(null);
 
   const flashcard = props.flashcard;
-  const next = props.next;
-  const prev = props.prev;
   const count = props.cardCount;
 
   const formatAnswers = () => {
@@ -61,9 +59,8 @@ const Flashcard = (props) => {
   };
 
   const checkAnswer = (guess) => {
-    
     const cleanGuess = removePunctuation(guess.toLowerCase()).trim();
-    if(cleanGuess == "") return false;
+    if (cleanGuess == "") return false;
 
     if (Array.isArray(flashcard.answer)) {
       // Since flashcard.answer is an array, check against each answer
@@ -140,11 +137,6 @@ const Flashcard = (props) => {
             )}
           </div>
         </form>
-      </div>
-
-      <div className="navigation-buttons">
-        <button onClick={prev}>Prev</button>
-        <button onClick={next}>Next</button>
       </div>
     </div>
   );
