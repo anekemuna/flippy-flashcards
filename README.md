@@ -1,20 +1,20 @@
-# Web Development Project 3 - *Name of App Here*
+# Web Development Project 3 - *Flippy Flashcards*
 
 Submitted by: **Munachimso Aneke**
 
-This web app: **insert description**
+This web app: **Flippy FlashCard is an application that contains a deck of Q&A cards**
 
-Time spent: **2** hours spent in total
+Time spent: **4** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **The user can enter their guess into an input box *before* seeing the flipside of the card**
+- [x] **The user can enter their guess into an input box *before* seeing the flipside of the card**
   - Application features a clearly labeled input box with a submit button where users can type in a guess
   - Clicking on the submit button with an **incorrect** answer shows visual feedback that it is wrong 
   -  Clicking on the submit button with a **correct** answer shows visual feedback that it is correct
-- [ ] **The user can navigate through an ordered list of cardss**
+- [x] **The user can navigate through an ordered list of cardss**
   - A forward/next button displayed on the card navigates to the next card in a set sequence when clicked
   - A previous/back button displayed on the card returns to the previous card in the set sequence when clicked
   - Both the next and back buttons should have some visual indication that the user is at the beginning or end of the list (for example, graying out and no longer being available to click), not allowing for wrap-around navigation
@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 - [ ] Users can use a shuffle button to randomize the order of the cards
   - Cards should remain in the same sequence (**NOT** randomized) unless the shuffle button is clicked 
   - Cards should change to a random sequence once the shuffle button is clicked
-- [ ] A user’s answer may be counted as correct even when it is slightly different from the target answer
+- [x] A user’s answer may be counted as correct even when it is slightly different from the target answer
   - Answers are considered correct even if they only partially match the answer on the card 
   - Examples: ignoring uppercase/lowercase discrepancies, ignoring punctuation discrepancies, matching only for a particular part of the answer rather than the whole answer
 - [ ] A counter displays the user’s current and longest streak of correct responses
@@ -39,7 +39,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [x] When the flashcard is clicked, CSS 3D styling animates it to show flipping like a physical card.
+* [ ]
 
 ## Video Walkthrough
 
