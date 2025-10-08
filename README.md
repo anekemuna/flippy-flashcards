@@ -4,7 +4,7 @@ Submitted by: **Munachimso Aneke**
 
 This web app: **Flippy FlashCard is an application that contains a deck of Q&A cards**
 
-Time spent: **6** hours spent in total
+Time spent: **6.5** hours spent in total
 
 ## Required Features
 
@@ -48,10 +48,18 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[![Walkthrough](https://img.youtube.com/vi/jfVPr4m4xqM/0.jpg)](https://www.youtube.com/watch?v=jfVPr4m4xqM)
+
+
+Walkthrough Link: [https://youtu.be/jfVPr4m4xqM]
+Walkthrough created with:
+[Youtube](https://www.youtube.com/)
+
+<!--
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+<!-- GIF created with ...  -->
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
