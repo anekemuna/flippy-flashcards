@@ -39,7 +39,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [x] When the flashcard is clicked, CSS 3D styling animates it to show flipping like a physical card.
+* [ ]
 
 ## Video Walkthrough
 
