@@ -56,11 +56,40 @@ const Flashcard = (props) => {
     }
   };
 
+  const removePunctuation = (str) => {
+    return str.replace(/[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g, "");
+  };
+
+  const checkAnswer = (guess) => {
+    const cleanGuess = removePunctuation(guess.trim().toLowerCase());
+
+    if (Array.isArray(flashcard.answer)) {
+      // Since flashcard.answer is an array, check against each answer
+      return flashcard.answer.some((answer) => {
+        const cleanAnswer = removePunctuation(answer.trim().toLowerCase());
+        return (
+          cleanAnswer.includes(cleanGuess) || cleanGuess.includes(cleanAnswer)
+        );
+      });
+    }
+
+    const cleanAnswer = removePunctuation(
+      flashcard.answer.trim().toLowerCase()
+    );
+
+    return cleanAnswer.includes(cleanGuess) || cleanGuess.includes(cleanAnswer);
+  };
+
   // deals with form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(userGuess);
-    setUserGuess("");
+
+    const result = checkAnswer(userGuess);
+    setIsCorrect(result ? "correct" : "wrong");
+
+    setIsFlipped(true); // flip card
+
+    setUserGuess(""); // reset users' guess form
   };
 
   return (
@@ -88,16 +117,24 @@ const Flashcard = (props) => {
         </div>
       </div>
 
-        {/* Form for Users' Input */}
-      <div className="answer-validator">
+      {/* Form for Users' Input */}
+      <div className={`answer-validator ${isCorrect || ""}`}>
         <form onSubmit={handleSubmit}>
-          <label>Answer:</label>
-          <input
-            type="text"
-            value={userGuess}
-            onChange={(e) => setUserGuess(e.target.value)}
-          />
-          <input type="submit" />
+          <div className="input-group">
+            <input
+              id="answer-input"
+              type="text"
+              value={userGuess}
+              onChange={(e) => setUserGuess(e.target.value)}
+              placeholder="Your answer..."
+            />
+            <button type="submit">Submit</button>
+            {isCorrect && (
+              <span className={`feedback-icon ${isCorrect}`}>
+                {isCorrect === "correct" ? "✓" : "✗"}
+              </span>
+            )}
+          </div>
         </form>
       </div>
 
