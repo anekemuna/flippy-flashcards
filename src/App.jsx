@@ -3,6 +3,7 @@ import "./App.css";
 import Flashcard from "./components/Flashcard";
 import flashcardsData from "./data/flashcards_docker.json";
 import NavigationControl from "./components/NavigationControl";
+import StreakCounter from "./components/StreakCounter";
 
 function App() {
   const [index, setIndex] = useState(0);
@@ -10,6 +11,8 @@ function App() {
     () => flashcardsData.map((_, i) => i) // [0, 1, 2, 3, ...]
   );
   const [isShuffled, setIsShuffled] = useState(false);
+  const [currentStreak, setCurrentStreak] = useState(0);
+  const [longestStreak, setLongestStreak] = useState(0);
 
   const nextCard = () => {
     // let randomIndex = 0;
@@ -42,6 +45,18 @@ function App() {
     setIndex(0);
   };
 
+  const handleStreak = (isCorrect) => {
+    if (isCorrect) {
+      const newStreak = currentStreak + 1; // increment streak
+      setCurrentStreak(newStreak);
+
+      // if newStreak is longer
+      if (newStreak > longestStreak) setLongestStreak(newStreak);
+    } else {
+      setCurrentStreak(0); //reset streak
+    }
+  };
+
   const isFirstCard = index === 0;
   const isLastCard = index === cardOrder.length - 1;
 
@@ -50,12 +65,18 @@ function App() {
       <h1>Top LeetCode Questions</h1>
       <h3>How would you solve this questions? Think of the algorithms.</h3>
       <h3>Number of cards: {flashcardsData.length}</h3>
+      
+      <StreakCounter
+        currentStreak={currentStreak}
+        longestStreak={longestStreak}
+      />
 
       <Flashcard
         flashcard={flashcardsData[cardOrder[index]]}
         key={cardOrder[index]}
         index={index}
         cardCount={flashcardsData.length}
+        onAnswerStreak={handleStreak}
       />
       <NavigationControl
         onNext={nextCard}
