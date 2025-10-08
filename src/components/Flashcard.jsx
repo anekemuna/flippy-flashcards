@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 const Flashcard = (props) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [userGuess, setUserGuess] = useState("");
+  const [isCorrect, setIsCorrect] = useState(null);
 
   const flashcard = props.flashcard;
   const next = props.next;
@@ -24,6 +26,7 @@ const Flashcard = (props) => {
     setIsFlipped(!isFlipped);
   };
 
+  // Sets styling based on category
   const getCategoryStyle = (categories) => {
     const category = categories.split(",")[0].trim().toLowerCase();
 
@@ -53,6 +56,13 @@ const Flashcard = (props) => {
     }
   };
 
+  // deals with form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(userGuess);
+    setUserGuess("");
+  };
+
   return (
     <div className="flashcard-container">
       <div className="card-index">
@@ -77,6 +87,20 @@ const Flashcard = (props) => {
           <div className="answers-container">{formatAnswers()}</div>
         </div>
       </div>
+
+        {/* Form for Users' Input */}
+      <div className="answer-validator">
+        <form onSubmit={handleSubmit}>
+          <label>Answer:</label>
+          <input
+            type="text"
+            value={userGuess}
+            onChange={(e) => setUserGuess(e.target.value)}
+          />
+          <input type="submit" />
+        </form>
+      </div>
+
       <div className="navigation-buttons">
         <button onClick={prev}>Prev</button>
         <button onClick={next}>Next</button>
