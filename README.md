@@ -4,7 +4,7 @@ Submitted by: **Munachimso Aneke**
 
 This web app: **Flippy FlashCard is an application that contains a deck of Q&A cards**
 
-Time spent: **4** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 

@@ -6,14 +6,14 @@ const NavigationControl = ({ onPrev, onNext, isFirstCard, isLastCard }) => {
       <button
         onClick={onPrev}
         disabled={isFirstCard}
-        className={isFirstCard ? "disbaled" : ""}
+        className={isFirstCard ? "disabled" : ""}
       >
         Prev
       </button>
       <button
         onClick={onNext}
         disabled={isLastCard}
-        className={isLastCard ? "disbaled" : ""}
+        className={isLastCard ? "disabled" : ""}
       >
         Next
       </button>
