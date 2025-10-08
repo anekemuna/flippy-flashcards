@@ -4,7 +4,7 @@ Submitted by: **Munachimso Aneke**
 
 This web app: **Flippy FlashCard is an application that contains a deck of Q&A cards**
 
-Time spent: **5** hours spent in total
+Time spent: **5.5** hours spent in total
 
 ## Required Features
 
@@ -22,7 +22,7 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 
-- [ ] Users can use a shuffle button to randomize the order of the cards
+- [x] Users can use a shuffle button to randomize the order of the cards
   - Cards should remain in the same sequence (**NOT** randomized) unless the shuffle button is clicked 
   - Cards should change to a random sequence once the shuffle button is clicked
 - [x] A user’s answer may be counted as correct even when it is slightly different from the target answer
@@ -40,7 +40,8 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [x] When the flashcard is clicked, CSS 3D styling animates it to show flipping like a physical card.
-* [ ]
+* [x] Clicking the shuffle button toggles between the initial order (sequential) and a shuffled order (randomized).
+
 
 ## Video Walkthrough
 

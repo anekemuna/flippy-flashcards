@@ -1,6 +1,13 @@
 import React from "react";
 
-const NavigationControl = ({ onPrev, onNext, isFirstCard, isLastCard }) => {
+const NavigationControl = ({
+  onPrev,
+  onNext,
+  onShuffle,
+  isFirstCard,
+  isLastCard,
+  isShuffled,
+}) => {
   return (
     <div className="navigation-buttons">
       <button
@@ -10,6 +17,9 @@ const NavigationControl = ({ onPrev, onNext, isFirstCard, isLastCard }) => {
       >
         Prev
       </button>
+      <button onClick={onShuffle} className="shuffle-button">
+        {isShuffled ? "🔁 UnShuffle" : "🔀 Shuffle"}
+      </button>
       <button
         onClick={onNext}
         disabled={isLastCard}
@@ -17,7 +27,6 @@ const NavigationControl = ({ onPrev, onNext, isFirstCard, isLastCard }) => {
       >
         Next
       </button>
-      
     </div>
   );
 };
