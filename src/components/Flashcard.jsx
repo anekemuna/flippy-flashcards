@@ -61,7 +61,9 @@ const Flashcard = (props) => {
   };
 
   const checkAnswer = (guess) => {
-    const cleanGuess = removePunctuation(guess.trim().toLowerCase());
+    
+    const cleanGuess = removePunctuation(guess.toLowerCase()).trim();
+    if(cleanGuess == "") return false;
 
     if (Array.isArray(flashcard.answer)) {
       // Since flashcard.answer is an array, check against each answer
@@ -87,7 +89,9 @@ const Flashcard = (props) => {
     const result = checkAnswer(userGuess);
     setIsCorrect(result ? "correct" : "wrong");
 
-    setIsFlipped(true); // flip card
+    if (result) {
+      setIsFlipped(true); //  TODO: Not sure if I like the instant flip
+    }
 
     setUserGuess(""); // reset users' guess form
   };
