@@ -344,6 +344,8 @@ body {
 }
 
 .deck-dropdown {
+  color: black;
+  font-family: inherit;
   padding: 0.5rem 0.8rem;
   border: 2px solid #ddd;
   border-radius: 6px;
