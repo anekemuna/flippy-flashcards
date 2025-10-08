@@ -208,11 +208,7 @@ body {
   opacity: 1;
 }
 
-.navigation-buttons button.disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
+.navigation-buttons button.disabled,
 .navigation-buttons button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
