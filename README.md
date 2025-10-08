@@ -39,6 +39,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
+* [x] Choose between different flashcard decks. Currently this app has two (leetcode questions and docker questions). The docker flashcard deck is the default.
 * [x] When the flashcard is clicked, CSS 3D styling animates it to show flipping like a physical card.
 * [x] Clicking the shuffle button toggles between the initial order (sequential) and a shuffled order (randomized).
 
@@ -59,6 +60,7 @@ GIF created with ...
 ## Notes
 
 - I initially used conditional rendering for displaying questions and answers, but I struggled with implementing CSS 3D transform styles to animate the process of flipping a card.
+- Struggled with implementing the card mastery feature. Wasn't able to implement it.
 
 
 ## License
