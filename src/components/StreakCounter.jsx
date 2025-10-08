@@ -5,11 +5,11 @@ const StreakCounter = ({ currentStreak, longestStreak }) => {
     <div className="streak-display">
       <div className="streak-item current">
         <span className="streak-label">Current Streak:</span>
-        <span className="streak-value">{currentStreak}</span>
+        <span className="streak-value"> <strong>{currentStreak}</strong></span>
       </div>
       <div className="streak-item longest">
         <span className="streak-label">Longest Streak:</span>
-        <span className="streak-value">{longestStreak}</span>
+        <span className="streak-value"> <strong>{longestStreak}</strong></span>
       </div>
     </div>
   );

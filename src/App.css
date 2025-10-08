@@ -324,3 +324,37 @@ body {
     transform: translateY(0);
   }
 }
+
+/* Deck Selector Styling */
+.deck-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 1rem 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.deck-selector label {
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+.deck-dropdown {
+  padding: 0.5rem 0.8rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  outline: none;
+  min-width: 180px;
+}
+
+.deck-dropdown:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+}
