@@ -4,13 +4,13 @@ Submitted by: **Munachimso Aneke**
 
 This web app: **Flippy FlashCard is an application that contains a deck of Q&A cards**
 
-Time spent: **3** hours spent in total
+Time spent: **4** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **The user can enter their guess into an input box *before* seeing the flipside of the card**
+- [x] **The user can enter their guess into an input box *before* seeing the flipside of the card**
   - Application features a clearly labeled input box with a submit button where users can type in a guess
   - Clicking on the submit button with an **incorrect** answer shows visual feedback that it is wrong 
   -  Clicking on the submit button with a **correct** answer shows visual feedback that it is correct
