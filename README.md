@@ -4,7 +4,7 @@ Submitted by: **Munachimso Aneke**
 
 This web app: **Flippy FlashCard is an application that contains a deck of Q&A cards**
 
-Time spent: **5.5** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
@@ -28,7 +28,7 @@ The following **optional** features are implemented:
 - [x] A user’s answer may be counted as correct even when it is slightly different from the target answer
   - Answers are considered correct even if they only partially match the answer on the card 
   - Examples: ignoring uppercase/lowercase discrepancies, ignoring punctuation discrepancies, matching only for a particular part of the answer rather than the whole answer
-- [ ] A counter displays the user’s current and longest streak of correct responses
+- [x] A counter displays the user’s current and longest streak of correct responses
   - The current counter increments when a user guesses an answer correctly
   - The current counter resets to 0 when a user guesses an answer incorrectly
   - A separate counter tracks the longest streak, updating if the value of the current streak counter exceeds the value of the longest streak counter 

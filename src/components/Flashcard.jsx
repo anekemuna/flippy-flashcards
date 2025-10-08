@@ -86,6 +86,8 @@ const Flashcard = (props) => {
     const result = checkAnswer(userGuess);
     setIsCorrect(result ? "correct" : "wrong");
 
+    props.onAnswerStreak(result);
+
     if (result) {
       setIsFlipped(true); //  TODO: Not sure if I like the instant flip
     }
